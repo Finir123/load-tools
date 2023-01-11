@@ -65,7 +65,7 @@ class Load:
 
 
     def take_client(self, thread_name, client):
-        start_time = time() # Начало нагрузки
+        start_time = time() # Начало нагрузки,
         while self.condition(time(), start_time, self.duration):
             if client == 'link':
                 items = [self.fake.image_url() for _ in range(50)]
